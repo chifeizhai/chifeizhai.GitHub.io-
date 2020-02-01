@@ -2,4 +2,4 @@
 ——————————*这里是痴肥的博客，主人会在这里不定期产生一些电子垃圾*
 
 以下是我的日志：
-- [Github基本操作](blog/Github基本操作.html)
+- [Github基本操作](/bolg/Github基本操作.html)
