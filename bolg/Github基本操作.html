@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github基本操作</title>
+</head>
+<body>
+    <h1>Github基本操作</h1>
+    <h3>配置Github公钥</h3>
+    <p>
+        <ol>
+            <li>终端输入 ssh-keygen -t rsa -b 4096 -C "自己的邮箱地址"</li>
+            <li>一直按回车，生成 ~/.ssh/id_rsa.pub 公钥文件</li>
+            <li>输入 cat ~/.ssh/id_rsa.pub 查看密钥</li>
+            <li>将密钥添加到Github网站上即可，步骤如下图</li>
+        </ol>
+    </p>
+    <img src="/img/1.png" alt="密钥上传步骤">
+    <h3>clone到本地</h3>
+    <p>
+        <ol>
+            <li>终端进入想存放文件的文件夹</li>
+            <li>输入 git clone 网站上的SSH链接 即可完成克隆</li>
+        </ol>
+    </p>
+    <h3>提交到本地仓库</h3>
+    <p>
+        <ol>
+            <li>输入 git add . (如出现warning,执行 git config --global core.autocrlf input 即可)</li>
+            <li>输入 git commit -am “ 描述信息 ”</li>
+        </ol>
+    <ul><li>第一次执行commit可能不会成功出现如下报错
+    </li></ul>
+    <img src="/img/2.png" alt="提示先设置邮箱和名字">
+    <br>按提示依次执行 git config --global user.name “ 邮箱地址 ”</br>
+    <br>
+    <br>执行git config --global user.name “ 名字”</br>
+    </p>
+    <h3>推送到远程仓库</h3>
+    <p>执行 git push origin master</p>   
+</body>
+</html>

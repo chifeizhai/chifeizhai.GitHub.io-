@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>终端的环境变量如何修改？</title>
+</head>
+<body>
+    <h1>终端的环境变量如何修改？</h1>
+    <h3>查看环境变量</h3>
+    <p>输入 echo $PATH</p>
+    <h3>修改环境变量</h3>
+    <p>
+        <ol>
+            <li>创建文件夹（名称自定，以下以aa代替）</li>
+            <li>在文件夹中创建名为xx（即命令代码，文件名无需后缀）的文件</li>
+            <li>编辑xx文件，输入所执行的命令</li>
+            <li>输入 vim ~/.bashrc 然后按shift+A进入插入模式</li>
+            <li>添加 export PATH="$PATH:文件夹aa的路径"</li>
+            <li>输入 source ~/.bashrc 使其生效</li>
+        </ol>
+    </p>
+    <h3>给环境变量添加别名</h3>
+    <p>
+        <ol>
+            <li>输入 vim ~/.bashrc 然后按shift+A进入插入模式</li>
+            <li>输入 alias xx="xxx" 使其生效。（从此输入xx相当于输入xxx）</li>
+        </ol>
+    </p>
+    <hr>
+    <h3>输入命令代码时提示 permission denied:xxx (缺失权限)</h3>
+    <p>输入ls -al查看权限（r为读，w为写，x为执行，-为无权限），查看缺失的权限。
+        <br>
+        <br>例如：rwxr-xr-x</br>
+        <br>（前三位字母为自己的权限，中间三位为同电脑的不同用户，后三位为其他人）</br>
+        <ul>
+            <li>输入 chmod +w xxx 给xxx命令添加写的权限</li>
+            <li>输入 chmod -x xxx 给xxx命令减去执行的权限</li>
+            <li>输入 chmod 777 xxx 任何人对xxx命令拥有读、写、执行的权限</li>
+            <li>输入 sudo chmod +w /etc/bashrc 用管理员身份给 /etc/bashrc文件加写权限</li>
+        </ul>
+    </p>
+</body>
+</html>
