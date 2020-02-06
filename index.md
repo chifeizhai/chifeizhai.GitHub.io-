@@ -5,4 +5,4 @@
 ## ![dog](/img/dog.gif)Git
 - [终端常用命令行](/blog/终端常用命令行.html)
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
-- [Github基本操作](/blog/Github基本操作.html)
+- [Github基础操作](/blog/Github基础操作.html)
