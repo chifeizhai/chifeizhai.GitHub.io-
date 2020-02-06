@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Github基本操作</title>
+    <title>Github基础操作</title>
 </head>
 <body>
-    <h1>Github基本操作</h1>
+    <h1>Github基础操作</h1>
     <h3>配置Github公钥</h3>
     <p>
         <ol>
@@ -42,5 +42,16 @@
     <p>执行 git push origin master</p>
     <h3>更新本地仓库</h3>
     <p>执行 git pull origin</p>
+    <h3>本地创建项目上传至Github</h3>
+    <p>
+        <ol>
+            <li>在Github上创建一个新的空项目，获取他的ssh地址</li>
+            <li>在本地创建一个文件夹，名字随便取</li>
+            <li>进入文件夹，执行 git init</li>
+            <li>编辑文件夹内内容</li>
+            <li>执行 git add . 然后执行 git commit -am"描述"</li>
+            <li>执行git push <b>ssh地址</b> master 完成上传</li>
+        </ol>
+    </p>
 </body>
 </html>
