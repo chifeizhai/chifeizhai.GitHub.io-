@@ -3,8 +3,8 @@
 
 以下是我的日志： 
 <div align=center>
-
-![香蕉](/img/banana.gif)</div>
+	<img src="/img/banana.gif">
+</div>
 ### Git
 - [终端常用命令行](/blog/终端常用命令行.html)
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
