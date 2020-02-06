@@ -3,7 +3,7 @@
 
 以下是我的日志：
 <center>
-  ![](/图片/banana.gif)
+  ![111](/图片/banana.gif)
 <center>  
 ### Git
 - [终端常用命令行](/日志/终端常用命令行.html)
