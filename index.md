@@ -2,10 +2,7 @@
 ——————————*这里是痴肥的博客，主人会在这里不定期产生一些电子垃圾*
 
 以下是我的日志： 
-<center><p>
-  
-  ![香蕉](/img/banana.gif)
-  </p></center>
+<div align=center>![香蕉](/img/banana.gif)</div>
 ### Git
 - [终端常用命令行](/blog/终端常用命令行.html)
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
