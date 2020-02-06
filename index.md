@@ -1,4 +1,4 @@
-#<center> ![香蕉](/img/banana.gif)      痴肥的妙妙屋      ![香蕉](/img/banana.gif)<center>
+#![香蕉](/img/banana.gif)      痴肥的妙妙屋      ![香蕉](/img/banana.gif)<center>
 ——————————*这里是痴肥的博客，主人会在这里不定期产生一些电子垃圾*
 
 以下是我的日志： 
