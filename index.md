@@ -4,8 +4,7 @@
 以下是我的日志：
 <center>
   
-  ![香蕉](/图片/banana.gif)
-  
+![香蕉](/图片/loulou.jpg)
 </center>  
 
 ### Git
