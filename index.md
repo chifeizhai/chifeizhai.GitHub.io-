@@ -6,3 +6,7 @@
 - [终端常用命令行](/blog/终端常用命令行.html)
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
 - [Github基本操作](/blog/Github基本操作.html)
+<center>
+
+![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif "图片Title")
+</center>
