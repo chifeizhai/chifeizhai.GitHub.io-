@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github进阶操作</title>
+</head>
+<body>
+    <h1>Github进阶操作</h1>
+    <h3>取消变动的暂存（撤销git add .）</h3>
+    <p>执行 git reset HEAD 文件名 来取消暂存。</p>
+    <h3>撤消对文件的修改</h3>
+    <p>执行 git checkout -- 文件名 用来撤销文件的修改。</p>
+    <h3>书签</h3>
+    <p>
+        <ul>
+            <li>git remote -v 查看书签信息</li>
+            <li>git remote add 书签名 仓库地址  添加新书签</li>
+            <li>git remote set-url 书签名 仓库地址  修改书签地址</li>
+            <li>git remote remove 书签名  删除书签</li>
+        </ul>
+    </p>
+    <h3>自定义Git命令</h3>
+    <p>
+        <ul>
+            <li>git config --global alias.aa 原命令  用aa代替原命令</li>
+            <br>
+            <li>修改环境变量</li>
+        </ul>
+    </p>
+    <hr>
+    <h1>分支、分支合并、冲突解决</h1>
+    <p>
+        <ul>
+            <li>创建分支 git branch 分支名</li>
+            <li>切换分支 git checkout 分支名</li>
+            <li>查看所有分支 git branch -a</li>
+            <li>创建并立即切换 git checkout -b 分支名</li>
+            <li>删除分支 git branch -d 分支名</li>
+        </ul>
+    </p>
+    <h3>分支合并</h3>
+    <p>例子如下：</p>
+    <p>
+        <ol>
+            <li>git checkout -b bugfix</li>
+            <li>echo 'fix bug' > index.html</li>
+            <li>git add .</li>
+            <li>git commit -m "修复了index.html里的xx bug"</li>
+            <li>git checkout master (想要合并到哪里就切换到哪里)</li>
+            <li>git merge bugfix</li>
+        </ol>
+    </p>
+    <h3>冲突解决</h3>
+    <p>
+        <ol>
+            <li>执行 git status 查看冲突文件</li>
+            <li>输入 git fetch 下载新的分支</li>
+            <li>执行 git branch -a 查看新的分支（origin/master）</li>
+            <li>（可选）执行 git diff 查看文件的变动</li>
+            <li>执行 git checkout origin/master 切换到新的分支</li>
+            <li>执行 git merge origin master 合并分支</li>
+            <li>提示冲突，找到冲突文件开始编辑，搜索 <<<< 找到冲突部分，手动修改并选择需要的内容，删除无关内容。之后保存重新提交</li>
+        </ol>
+    </p>
+
+</body>
+</html>

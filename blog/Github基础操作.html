@@ -53,5 +53,32 @@
             <li>执行git push <b>ssh地址</b> master 完成上传</li>
         </ol>
     </p>
+    <h3>删除文件</h3>
+    <p>
+        <ol>
+            <li>执行 rm 文件名</li>
+            <li>执行 git commit -am"描述"</li>
+        </ol>
+    </p>
+    <h3>本地保留文件，删除远程仓库的文件</h3>
+    <p>
+        <ul>
+            <li>
+                <ol>
+                    <li>执行 git rm --cached 文件名</li>
+                    <li>执行 git commit -m "删除无关文件"（无须执行 git add .）即可</li>
+                </ol>
+            </li>
+            <br>
+            <li>
+                <ol>
+                     <li>执行 touch .gitignore 创建gitignore文件夹</li>
+                     <li>执行 echo 文件名 > .gitignore 把文件加入该文件夹</li>
+                     <li>执行 git add . 然后执行 git commit -am"描述"</li>
+                     <li>执行 git push origin master 上传，从此gitignore内的文件不再上传</li>
+                </ol>
+            </li>
+        </ul>
+    </p>
 </body>
 </html>
