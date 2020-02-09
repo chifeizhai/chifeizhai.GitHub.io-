@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github高级操作</title>
+</head>
+<body>
+    <h1>变基（git rebase）</h1>
+    <p>对于一般的分支合并，提交历史分支分叉太多，不美观。作为一个开源项目，总希望历史是清白干净的。</p>
+    <p>以下为普通的分支合并：</p>
+    <img src="/img/3.png" alt="普通分支">
+    <p>上图为一个普通的分支，通过git merge 执行合并，变成下图</p>
+    <ul>
+        <li>git checkout master</li>
+        <li>git merge experiment</li>
+    </ul>
+    <img src="/img/4.png" alt="普通分支合并">
+    <h3>使用变基的场景</h3>
+    <p>执行如下命令：</p>
+    <ul>
+        <li>git checkout experiment</li>
+        <li>git rebase master</li>
+    </ul>
+    <p>原理是首先找到这两个分支的最近共同祖先 C2，然后对比当前分支相对于该祖先的历次提交，提取相应的修改并存为临时文件，然后将当前分支指向目标基底 C3, 最后以此将之前另存为临时文件的修改依序应用，效果图如下：</p>
+    <img src="/img/5.png" alt="执行变基">
+    <p>再进行合并</p>
+    <ul>
+        <li>git checkout master</li>
+        <li>git merge experiment</li>
+    </ul>
+    <img src="/img/6.png" alt="变基后合并">
+    <hr>
+    <h1>修改或者合并提交历史</h1>
+    <h3>查看提交信息</h3>
+    <p>git log</p>
+    <h3>修改最后一次提交</h3>
+    <p><ul><li>执行 git commit --amend 进入修改界面，改完保存退出即可</li></ul></p>
+    <p>如用户在第二次提交时执行 git commit --amend ，此刻能修改上次提交的消息，保存后两次提交会合并为一次提交。</p>
+    <h3>修改多个提交</h3>
+    <p><ul><li>执行 git rebase -i HEAD~3(想要修改的提交数量)</li></ul></p>
+    <p>运行这个命令会在文本编辑器上给你一个提交的列表，看起来像下面这样：</p>
+    <br>
+    <pre>
+pick f7f3f6d changed my name a bit
+pick 310154e updated README formatting and added blame
+pick a5f4a0d added cat-file
+
+# Rebase 710f0f8..a5f4a0d onto 710f0f8
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+    </pre>
+    <p>
+        <ul>
+            <li>将想要编辑的提交信息前面的pick改成edit或首字母e，输入 ：wq 退出</li>
+            <li>执行 git commit --amend 进入修改界面，改完保存退出</li>
+            <li>执行 git rebase --continue 进行下一个修改，直至全部改完</li>
+        </ul>
+    </p>
+    <h3>合并提交</h3>
+    <p>
+        <ul>
+            <li>执行 git rebase -i HEAD~3(想要修改的提交数量)</li>
+            <li>将想要合并的提交信息前面的pick改成squash或首字母s，输入 ：wq 退出(最早的一次提交不能改！)</li>
+            <li>此时进入合并界面，可编辑提交信息，改完输入 ：wq 退出即可完成合并</li>
+        </ul>
+    </p>
+    <hr>
+    <h1>撤销操作</h1>
+    <h3>撤销 git add .</h3>
+    <p><ul><li>执行 git reset 或者 git rm --cached 文件名 </li></ul></p>
+    <h3>撤销 git commit</h3>
+    <p><ul><li>执行 git reset --soft HEAD~1</li></ul></p>
+    <h3>执行 git commit 后直接撤销到未 git add . 状态</h3>
+    <p><ul><li>执行 git reset --mixed HEAD~1</li></ul></p>
+    <h3>执行 git commit 后操作全都撤销，连本体一起消除</h3>
+    <p><ul><li>执行 git reset --hard HEAD~1</li></ul></p>
+    <h3>“撤销提交”</h3>
+    <p><ul><li>执行 git revert HEAD~1或git revert 提交代码</li></ul></p>
+    <p>通过创建新的提交来“撤销提交”，换句话说并不是真的撤销，而是增加相反变更，更为安全的撤销方式。</p>
+    <h3>只浏览不操作</h3>
+    <p><ul><li>执行 git checkout HEAD~1或git checkout 提交代码 </li></ul></p>
+</body>
+</html>
