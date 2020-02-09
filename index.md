@@ -14,4 +14,4 @@
 ## ![dog](/img/dog.gif)CSS
 ## ![dog](/img/dog.gif)JavaScirpt
 
-<center>居中</center>
+<center><img src="/img/lv.gif"/></center>
