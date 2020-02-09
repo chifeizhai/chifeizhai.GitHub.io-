@@ -14,8 +14,4 @@
 ## ![dog](/img/dog.gif)CSS
 ## ![dog](/img/dog.gif)JavaScirpt
 
-<center>
-
-![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif "图片Title")
-
-</center>
+<div align=center><img src="http://zh.mweb.im/asset/img/set-up-git.gif"/></div> 
