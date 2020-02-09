@@ -11,7 +11,12 @@
 - [Github高级操作](/blog/Github高级操作.html)
 
 ## ![dog](/img/dog.gif)HTML
+- [HTML的历史](/blog/HTML的历史.html)
+
 ## ![dog](/img/dog.gif)CSS
+- [CSS的历史](/blog/CSS的历史.html)
+
 ## ![dog](/img/dog.gif)JavaScirpt
+- [JavaScript的历史](/blog/JavaScript的历史.html)
 
 <center><img src="/img/lv.gif"/></center>
