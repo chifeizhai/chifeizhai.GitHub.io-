@@ -5,6 +5,8 @@
 <center>
 
 ![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif "图片Title")
+
+
 </center>
 ## ![dog](/img/dog.gif)Git
 - [终端常用命令行](/blog/终端常用命令行.html)
