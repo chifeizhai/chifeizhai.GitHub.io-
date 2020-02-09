@@ -3,7 +3,9 @@
 
 以下是我的日志：
 
-<center>## ![dog](/img/dog.gif)Git</center>
+## <center>
+  
+  ![dog](/img/dog.gif)Git</center>
 - [终端常用命令行](/blog/终端常用命令行.html)
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
 - [Github基础操作](/blog/Github基础操作.html)
