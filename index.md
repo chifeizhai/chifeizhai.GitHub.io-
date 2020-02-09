@@ -14,4 +14,4 @@
 ## ![dog](/img/dog.gif)CSS
 ## ![dog](/img/dog.gif)JavaScirpt
 
-<div align=center><img src="http://zh.mweb.im/asset/img/set-up-git.gif"/></div> 
+<center>居中</center>
