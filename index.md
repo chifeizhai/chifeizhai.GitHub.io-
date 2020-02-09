@@ -9,20 +9,17 @@
 - [Github基础操作](/blog/Github基础操作.html)
 - [Github进阶操作](/blog/Github进阶操作.html)
 - [Github高级操作](/blog/Github高级操作.html)
-
-## ![dog](/img/dog.gif)HTML
+## ![dog](/img/dog.gif)Git
 - GKD
 - GKD
 - GKD
 - GKD
-
-## ![dog](/img/dog.gif)CSS
+## ![dog](/img/dog.gif)Git
 - GKD
 - GKD
 - GKD
 - GKD
-
-## ![dog](/img/dog.gif)JavaScirpt
+## ![dog](/img/dog.gif)Git
 - GKD
 - GKD
 - GKD
