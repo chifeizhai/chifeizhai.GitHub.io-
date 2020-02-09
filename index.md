@@ -9,7 +9,17 @@
 - [Github进阶操作](/blog/Github进阶操作.html)
 - [Github高级操作](/blog/Github高级操作.html)
 ## ![dog](/img/dog.gif)CSS
+- [终端常用命令行](/blog/终端常用命令行.html)
+- [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
+- [Github基础操作](/blog/Github基础操作.html)
+- [Github进阶操作](/blog/Github进阶操作.html)
+- [Github高级操作](/blog/Github高级操作.html)
 ## ![dog](/img/dog.gif)JavaScirpt
+- [终端常用命令行](/blog/终端常用命令行.html)
+- [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
+- [Github基础操作](/blog/Github基础操作.html)
+- [Github进阶操作](/blog/Github进阶操作.html)
+- [Github高级操作](/blog/Github高级操作.html)
 ## ![dog](/img/dog.gif)Git
 - [终端常用命令行](/blog/终端常用命令行.html)
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
@@ -17,4 +27,9 @@
 - [Github进阶操作](/blog/Github进阶操作.html)
 - [Github高级操作](/blog/Github高级操作.html)
 ## ![dog](/img/dog.gif)HTML
+- [终端常用命令行](/blog/终端常用命令行.html)
+- [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
+- [Github基础操作](/blog/Github基础操作.html)
+- [Github进阶操作](/blog/Github进阶操作.html)
+- [Github高级操作](/blog/Github高级操作.html)
 
