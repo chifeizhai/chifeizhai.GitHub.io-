@@ -7,3 +7,5 @@
 - [终端的环境变量如何修改](/blog/终端的环境变量如何修改.html)
 - [Github基础操作](/blog/Github基础操作.html)
 - [Github进阶操作](/blog/Github进阶操作.html)
+- [Github高级操作](/blog/Github高级操作.html)
+## ![dog](/img/dog.gif)HTML
